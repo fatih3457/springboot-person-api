@@ -31,15 +31,6 @@ Bu proje, Spring Boot kullanarak geliştirilmiş basit bir RESTful API'dir. Kiş
 | PUT   | `/api/persons/{id}`    | ID’ye göre günceller |
 | DELETE| `/api/persons/{id}`    | ID’ye göre siler     |
 
-## 🧪 Postman Testi İçin Örnek JSON
-
-### POST / PUT Gövdesi
-
-```json
-{
-  "name": "Fatih",
-  "age": 30
-}
 
 ### 🗃️ Veritabanı
 
@@ -51,3 +42,14 @@ JDBC URL: jdbc:h2:mem:testdb
 
 👤 Fatih Özcan
 📌 Java / Spring Boot öğrenme süreci için geliştirilmiştir.
+
+## 🧪 Postman Testi İçin Örnek JSON
+
+### POST / PUT Gövdesi
+
+```json
+{
+  "name": "Fatih",
+  "age": 30
+}
+
