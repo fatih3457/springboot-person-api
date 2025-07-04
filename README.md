@@ -41,7 +41,7 @@ Bu proje, Spring Boot kullanarak geliştirilmiş basit bir RESTful API'dir. Kiş
   "age": 30
 }
 
-🗃️ Veritabanı
+### 🗃️ Veritabanı
 
 H2 in-memory database kullanıldı.
 Tarayıcı üzerinden erişim: http://localhost:8081/h2-console
