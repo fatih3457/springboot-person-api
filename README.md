@@ -1,38 +1,53 @@
-# Person API
+# Person API — Spring Boot CRUD Projesi
 
-Java ve Spring Boot kullanılarak geliştirilmiş basit bir REST API projesi.
+Bu proje, Spring Boot kullanarak geliştirilmiş basit bir RESTful API'dir. Kişi (Person) nesneleri üzerinde **Create, Read, Update, Delete (CRUD)** işlemlerini yapmanıza olanak tanır.
 
-## Teknolojiler
+## 🚀 Özellikler
 
-- Java 17  
-- Spring Boot 3  
-- Maven  
-- H2 Database (in-memory)
+- ✅ Yeni kişi ekleme (POST)
+- ✅ Kişileri listeleme (GET)
+- ✅ Kişi bilgilerini güncelleme (PUT)
+- ✅ Kişi silme (DELETE)
+- ✅ DTO kullanımı ile veri taşıma
+- ✅ JPA ve H2 DB ile kalıcı veri kaydı
+- ✅ Katmanlı mimari (Controller - Service - Repository - Model - DTO)
 
-## Özellikler
+## 🛠️ Kullanılan Teknolojiler
 
-- Kişi ekleme (POST /api/persons)  
-- Kişi listeleme (GET /api/persons)
+- Java 17
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- H2 Database
+- Lombok (isteğe bağlı)
+- IntelliJ IDEA
 
-## Kurulum
+## 🧱 API Endpoint'leri
 
-1. Projeyi klonla:  
-   `git clone https://github.com/kullaniciadi/personapi.git`  
-2. Proje dizinine gir:  
-   `cd personapi`  
-3. Uygulamayı çalıştır:  
-   `./mvnw spring-boot:run` (Linux/Mac) veya `mvnw.cmd spring-boot:run` (Windows)
+| Metot | Endpoint              | Açıklama             |
+|-------|------------------------|----------------------|
+| GET   | `/api/persons`         | Tüm kişileri getirir |
+| POST  | `/api/persons`         | Yeni kişi ekler      |
+| PUT   | `/api/persons/{id}`    | ID’ye göre günceller |
+| DELETE| `/api/persons/{id}`    | ID’ye göre siler     |
 
-## Kullanım
+## 🧪 Postman Testi İçin Örnek JSON
 
-- Yeni kişi eklemek için POST isteği:  
-  URL: `http://localhost:8080/api/persons`  
-  Body (JSON):  
-  ```json
-  {
-    "name": "Fatih Özcan",
-    "age": 35
-  }
+### POST / PUT Gövdesi
 
-  Kişi listesini almak için GET isteği:
-  URL: http://localhost:8080/api/persons
+```json
+{
+  "name": "Fatih",
+  "age": 30
+}
+
+🗃️ Veritabanı
+
+H2 in-memory database kullanıldı.
+Tarayıcı üzerinden erişim: http://localhost:8081/h2-console
+JDBC URL: jdbc:h2:mem:testdb
+
+✍️ Geliştirici
+
+👤 Fatih Özcan
+📌 Java / Spring Boot öğrenme süreci için geliştirilmiştir.
